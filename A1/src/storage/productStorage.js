@@ -24,6 +24,7 @@ export function addProduct(product) {
 // TODO: remove a product by id and persist
 export function removeProduct(id) {
   /* your code */
+  // removes product if the product ID is equal to the given ID
   const products = getAllProducts().filter(p => p.id !==id);
   localStorage.setItem(STORAGE_KEY, JSON.stringify(products));
 }
